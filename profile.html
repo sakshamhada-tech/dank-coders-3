@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            width: 360px;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #111827;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 20px 0 8px;
+            color: #111827;
+        }
+
+        .role {
+            margin: 4px 0 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .bio {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .detail {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .label {
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #777;
+            margin-bottom: 2px;
+        }
+
+        .value {
+            color: #222;
+            font-size: 14px;
+        }
+
+        .actions {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .button {
+            flex: 1;
+            text-align: center;
+            padding: 10px 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #111827;
+            color: white;
+        }
+
+        .secondary {
+            background: #f3f4f6;
+            color: #111827;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="card" aria-label="Profile card">
+        <div class="profile">
+            <div class="avatar" aria-label="Dank Coders initials">DC</div>
+            <div>
+                <h1 class="name">Dank Coders</h1>
+                <p class="role">Full-Stack Developer</p>
+            </div>
+        </div>
+
+        <h2>About Me</h2>
+        <p class="bio">
+            We are a team of college students who enjoy building clean, practical websites
+            and learning new technologies together.
+        </p>
+
+        <h2>Education</h2>
+        <section class="details" aria-label="Education details">
+            <div class="detail">
+                <span class="label">Degree</span>
+                <span class="value">B.Tech in Computer Science</span>
+            </div>
+            <div class="detail">
+                <span class="label">Year</span>
+                <span class="value">First Year</span>
+            </div>
+            <div class="detail">
+                <span class="label">Interests</span>
+                <span class="value">Web Development, AI, Open Source</span>
+            </div>
+        </section>
+
+        <div class="actions">
+            <a class="button primary" href="skills.html">Skills</a>
+            <a class="button secondary" href="contact.html">Contact</a>
+        </div>
+    </main>
+</body>
+
+</html>
