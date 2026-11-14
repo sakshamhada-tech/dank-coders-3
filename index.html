@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+
+    <!-- Start screen -->
+    <section id="start-screen">
+      <h1>Number Guessing Challenge</h1>
+      <p>I'm thinking of a secret number. Guess it before your attempts run out!</p>
+      <p>Pick a difficulty:</p>
+      <select id="difficulty">
+        <option value="easy">Easy (1–50, 10 attempts)</option>
+        <option value="medium" selected>Medium (1–100, 7 attempts)</option>
+        <option value="hard">Hard (1–200, 5 attempts)</option>
+      </select>
+      <button id="start-btn">Start Game</button>
+    </section>
+
+    <!-- Game screen -->
+    <section id="game-screen" class="hidden">
+      <h2>Guess the number</h2>
+      <p id="range-text"></p>
+      <p class="attempts">Attempts left: <span id="attempts-left"></span></p>
+      <input type="number" id="guess-input" placeholder="Enter your guess">
+      <button id="guess-btn">Submit Guess</button>
+      <p id="message"></p>
+    </section>
+
+    <!-- Result screen -->
+    <section id="result-screen" class="hidden">
+      <h2 id="result-title"></h2>
+      <p>The secret number was <strong id="secret-reveal"></strong></p>
+      <p>Attempts used: <strong id="attempts-used"></strong></p>
+      <p>Score: <strong id="score"></strong></p>
+      <p>Best score this session: <strong id="best-score">0</strong></p>
+      <button id="again-btn">Play Again</button>
+    </section>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
