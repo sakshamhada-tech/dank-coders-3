@@ -16,6 +16,7 @@ A simple browser-based game where the computer picks a secret number and the pla
 
 ## 🎮 How to Play
 
+0. Go to https://sakshamhada-tech.github.io/dank-coders-3
 1. Choose a difficulty level and click **Start Game**.
 2. Enter a number within the given range and click **Submit Guess**.
 3. The game tells you whether your guess is **Too High** or **Too Low**.
